@@ -78,9 +78,6 @@ class SportsWalking(Training):
     KMH_IN_MSEC: ClassVar[float] = 0.278
     CM_IN_M: ClassVar[float] = 100.0
 
-    action: int
-    duration: float
-    weight: float
     height: float
 
     def get_spent_calories(self) -> float:
@@ -102,9 +99,6 @@ class Swimming(Training):
     MULTIPLIER_LENGTH_POOL: ClassVar[float] = 1.1
     MULTIPLIER_COUNT_POOL: ClassVar[float] = 2.0
 
-    action: int
-    duration: float
-    weight: float
     length_pool: float
     count_pool: int
 
